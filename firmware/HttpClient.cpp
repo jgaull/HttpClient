@@ -99,14 +99,14 @@ void HttpClient::request(http_request_t &aRequest, http_response_t &aResponse, h
     client.print(aHttpMethod);
     client.print(" ");
     client.print(aRequest.path);
-    client.print(" HTTP/1.1\r\n");
+    client.print(" HTTPS/1.1\r\n");
 
     #ifdef LOGGING
     Serial.println("HttpClient>\tStart of HTTP Request.");
     Serial.print(aHttpMethod);
     Serial.print(" ");
     Serial.print(aRequest.path);
-    Serial.print(" HTTP/1.0\r\n");
+    Serial.print(" HTTPS/1.1\r\n");
     #endif
 
     // Send General and Request Headers.
